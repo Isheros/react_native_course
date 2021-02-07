@@ -9,7 +9,7 @@ const HomeScreen = ({navigation}) =>{
     />
     <Button
       title='Counter Screen'
-      onPress={()=> navigation.navigate('CounterScreen')}
+      onPress={()=> navigation.navigate('CounterScreen', {initialNumber:  0})}
     />
     <Button
       title='Color Screen'

@@ -15,7 +15,7 @@ function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="ImageScreen" component={ImageScreen} />
-        <Stack.Screen name="CounterScreen" component={CounterScreen} />
+        <Stack.Screen name="CounterScreen" component={CounterScreen}/>
         <Stack.Screen name="ColorScreen" component={ColorScreen} />
         <Stack.Screen name="SquareScreen" component={SquareScreen} />
       </Stack.Navigator>
