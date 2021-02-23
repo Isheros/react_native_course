@@ -8,7 +8,7 @@ const ColorCounter = ({color, change, state}) =>{
     <Slider
     minimumValue={0}
     maximumValue={255}
-    onValueChange={value => change({color: color, value:value})}
+    onValueChange={value => change({type: 'change_'+color, payload:value})}
   />
   <Text>{state}</Text>
   </View>

@@ -14,7 +14,8 @@ const TextScreen = () =>{
       value={name}
       onChangeText={(value)=> setName(value)}
     />
-    <Text style={styles.text}>Hello {name}!</Text>
+    {name.length > 0 ? <Text style={styles.text}>Hello {name}!</Text> : null}
+  
   </View>
   );
 };

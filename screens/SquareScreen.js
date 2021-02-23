@@ -4,13 +4,13 @@ import ColorCounter from '../components/ColorCounter'
 
 
 const reducer = (state, action) =>{
-  switch(action.color){
-    case 'Red':
-      return {...state, red: action.value};
-    case 'Green':
-      return {...state,green: action.value};
-    case 'Blue':
-      return {...state, blue: action.value};
+  switch(action.type){
+    case 'change_Red':
+      return {...state, red: action.payload};
+    case 'change_Green':
+      return {...state,green: action.payload};
+    case 'change_Blue':
+      return {...state, blue: action.payload};
     default:
       return state;
   }
